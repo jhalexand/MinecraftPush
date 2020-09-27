@@ -1,8 +1,9 @@
-author: Jop Vernooij
+author: Jop Vernooij, Jeff Alexander
 description: Get push notifications from your Minecraft server via Pushover.
 main: net.jopv.minecraft.bukkit.minecraftpush.MinecraftPush
 name: MinecraftPush
-version: 1.2.1
+version: 1.3
+api-version: 1.14
 permissions:
     minecraftpush.receive:
         description: Can player receive notifications.
@@ -16,7 +17,7 @@ permissions:
 commands:
     pushover:
         description: Enable or disable notifications for yourself.
-        usage: /pushover <enable/disable> <pushover user key> §7(Get your user key by going to https://www.pushover.net/, logging in, copying it, and pasting it here using CTRL+V.)
+        usage: /pushover <enable/disable> <pushover user key> §7(Get your user key by going to https://www.pushover.net/, logging in, copying it, and pasting it here.)
         aliases:
             - notifications
     broadcast:
