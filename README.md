@@ -1,4 +1,13 @@
-This is a Minecraft (Bukkit) plugin that allows for push notifications from your Minecraft server via [Pushover](http://www.pushover.net/).
+This is a Minecraft (Bukkit) plugin that sends push notifications from your Minecraft server via [Pushover](http://www.pushover.net/).
+
+This is a fork of [jobukkit's](https://github.com/jobukkit) orignal [MinecraftPush](https://github.com/jobukkit/MinecraftPush) version.
+
+I forked it in order to add tracking of how long a player was on when they leave. As a Dad running a minecraft server,
+this is good information.
+
+Along the way, I also added a gradle build environment, removed calls to a flaky phone-home plugin tracking
+service, and specified an API version in the plugin so bukkit doesn't warn about legacy plugins.
+
 
 Installation
 -----
@@ -16,6 +25,7 @@ Features
 
 - Get a notification when someone joins or leaves. 📲
    - Custom join/leave messages supported!
+   - Includes how long player was connected when player leaves
 - Broadcast to all online players and all offline players with notifications enabled with `/broadcast <message>`. 📢
    - Permission is `minecraftpush.broadcast`; by default all ops can do it.
 - [Name changing](https://mojang.com/2014/04/minecraft-1-7-6-pre-release/) ready! 📛
